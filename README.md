@@ -58,5 +58,5 @@ Aquél código que se apega a cada uno de los principios de SOLID
 
 # Entregables
 
-[Video de app funcionando](View%20raw)
+[Video de app funcionando](https://github.com/eduardoagpi/movies/blob/master/delivery/video_full_movies.mp4?raw=true)
 [APK de la app](https://github.com/eduardoagpi/movies/blob/master/delivery/app-debug.apk?raw=true)
