@@ -37,6 +37,7 @@ Las siguientes son las capas (vistas desde un CleanArchitecture approach) en ord
 ## Presentación
 La presentación de los datos se hace a través de viewModels. Cualquier cambio en el modelo de la vista provocará que se renderice la misma por completo. 
 Para ello se utiliza ViewModels en conjunto con LiveData
+
 *Se utiliza rxJava para la capa de domain y datos, y se utiliza liveData para la capa de presentación. Esta decisión en gran medida es porque si bien se podria utilizar también live data en room, eso haría que nuestro sistema estuviera casado con la base de datos de Room (y Uncle Bob nos advierte de no caer en eso!) 
 En la capa de vista se hace uso de LiveData por ser componentes aware of lifecycle. De paso esto permite que el soporte de la app a cambios en la orientacion entre portrait-landscape sea trivial*
 
@@ -55,3 +56,7 @@ Entre sus propósitos se encuentra
 ## Qué características tiene, según su opinión, un “buen” código o código limpio?
 Aquél código que se apega a cada uno de los principios de SOLID
 
+# Entregables
+
+[Video de app funcionando](View%20raw)
+[APK de la app](https://github.com/eduardoagpi/movies/blob/master/delivery/app-debug.apk?raw=true)
