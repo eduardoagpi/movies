@@ -33,6 +33,7 @@ Las siguientes son las capas (vistas desde un CleanArchitecture approach) en ord
 
  ## Repositorios
  Para el acceso de datos desde la capa de dominio se utiliza el Repository Pattern. Usando el principio de inversión de dependencias, la definicion de los repositorios se encuentra en la capa de dominio y la implementacion en la capa de datos. De esta manera las fuentes de datos son intercambiables y la capa de dominio es agnóstica sobre la BD utilizada, en este caso Room
+ El uso de repositorios permite tener una "single source of truth" y así obtener datos de la BD si no hay red.
  
 ## Presentación
 La presentación de los datos se hace a través de viewModels. Cualquier cambio en el modelo de la vista provocará que se renderice la misma por completo. 
