@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.activity.MovieDetailActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/movie_item_image"
+                android:transitionName="movie_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Large"
+                android:paddingTop="15dp"
+                android:id="@+id/movie_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:paddingTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"/>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/movie_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:paddingTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release Date"/>
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/text_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:paddingTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:paddingTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:scaleType="centerInside"
+                    android:id="@+id/stars_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/text_not_found"
+        android:text="Not found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
